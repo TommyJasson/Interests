@@ -1,238 +1,232 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>Understanding Tommy</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <head>
+    <title>Understanding Tommy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=IM Bodini Poster|Didot|Playfair Display" rel="stylesheet">
-  <style> 
-    
-    @font-face{
-      font-family: "Bodini Poster", serif;
-    }
-    
-    @font-face{
-      font-family: "Didot", serif;
-    }
-    
-     @font-face{
-      font-family: "Playfair Display", serif;
-    }
-    
-          .Header1 {
+    <style>
+      @font-face {
+        font-family: "Bodini Poster", serif;
+      }
+
+      @font-face {
+        font-family: "Didot", serif;
+      }
+
+      @font-face {
+        font-family: "Playfair Display", serif;
+      }
+
+      .Header1 {
         font-family: "Bodini Poster", serif;
         font-size: 400%;
         color: white;
         font-weight: 900;
-        
+
       }
-    
-    .Header2{
-      font-family: "Playfair Display", serif;
+
+      .Header2 {
+        font-family: "Playfair Display", serif;
         font-size: 25px;
         color: white;
         font-weight: 900;
         text-align: left;
-      padding: 20px;
-    }
-      
+        padding: 20px;
+      }
+
       .Body1 {
         font-family: "Didot", serif;
         font-size: 20px;
         color: white;
         font-weight: 500;
         padding: 20px;
-    }
-    
-    .Body2 {
-      font-family: "Playfair Display", serif;
+      }
+
+      .Body2 {
+        font-family: "Playfair Display", serif;
         font-size: 20px;
         color: white;
         font-weight: 500;
-    }
+      }
 
-    a {
-      color: pink;
-    }
-    
-    ul.sidenav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 15%;
-      background-color: black;
-      position: fixed;
-      height: 100%;
-      overflow: inherit;
-      color: white;
-    }
+      a {
+        color: pink;
+      }
 
-    ul.sidenav li a {
-      display: block;
-      padding: 8px 16px;
-      text-decoration: none;
-      color: grey;
-    }
-
-    ul.sidenav li a.active {
-      background-color: black;
-      color: white;
-    }
-
-    ul.sidenav li a:hover:not(.active) {
-      background-color: black;
-      color: white;
-    }
-
-    div.content {
-      margin-left: 25%;
-      padding: 1px 16px;
-      height: 1000px;
-    }
-
-    @media screen and (max-width: 900px) {
       ul.sidenav {
-        width: 100%;
-        height: auto;
-        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: black;
+        position: fixed;
+        height: 100%;
+        overflow: inherit;
         color: white;
       }
 
       ul.sidenav li a {
-        float: left;
-        padding: 15px;
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
         color: grey;
       }
 
-      div.content {margin-left: 0;}
-    }
-
-    @media screen and (max-width: 400px) {
-      ul.sidenav li a {
-        text-align: center;
-        float: none;
+      ul.sidenav li a.active {
+        background-color: black;
+        color: white;
       }
-    }
-      
-    body {
-      background-color: black;
-    }
-    
-    .home {
-    position: fixed;
-    }
-    
-  	.text1 {
-     text-align: center;
-      top: 20%;
-  	left: 75%;
-  	color: white;
-    padding: 15px;
-		}
-    
-    .text2 {
-     text-align: right;
-         	left: 75%;
-      max-width: 30%;
-      height: 30%;
-  	color: white;
-		}
-    
-    .text4 {
-     position: absolute;
-      text-align: left;
-      max-width: 20%;
-      top: 23%;
-  	left: 75%;
-  	color: white;
-    padding: 15px;
-		}
 
-    .text5 {
-      position: absolute;
-     text-align: center;
-      top: 1100px;
-      width: 65%;
-  	color: white;
-    padding: 15px;
-		}
-    
-    .img1 {
-    position: absolute;
-    top: 26%;
-    left: 54%;
-    max-width: 40%; 
-    max-height: 40%; 
-    border: 5px white groove
-    }
-    
-    .img2 {
-   position: absolute;
-    top: 98%;
-    left: 30%;
-    max-width: 40%; 
-    max-height: 40%; 
-    border: 5px white groove
-    }
-    
-     .img3 {
-   position: absolute;
-    top: 98%;
-    left: 70%;
-    max-width: 70%; 
-    max-height: 40%; 
-    border: 5px white groove
-    }
-    
- 
-    
-  </style>
-</head>
+      ul.sidenav li a:hover:not(.active) {
+        background-color: black;
+        color: white;
+      }
 
-<body>
-  <nav>
-    
-  <ul class="sidenav">
-    <li><a href="https://tommyjasson.github.io/Home/" class="Body2"> Home</a></li>
-    <li><a href="https://tommyjasson.github.io/About-Me/" class="Body2"> About Me</a></li>
-    <li><a class="active Body2" href="#Interests"> Interests</a></li>
-    <li><a href="#Projects" class="Body2"> Projects</a></li>
-    <li><a href="#Contact" class="Body2"> Contact</a></li>
-  </ul>
-  </nav>
+      div.content {
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+      }
 
-  <div class="content">
-    <div class="container">
-      
-    </div>
-    <div id="home">
-    
-        <div class="text3"> 
-          
+      @media screen and (max-width: 900px) {
+        ul.sidenav {
+          width: 100%;
+          height: auto;
+          position: relative;
+          color: white;
+        }
+
+        ul.sidenav li a {
+          float: left;
+          padding: 15px;
+          color: grey;
+        }
+
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        ul.sidenav li a {
+          text-align: center;
+          float: none;
+        }
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .home {
+        position: fixed;
+      }
+
+      .text1 {
+        text-align: center;
+        top: 20%;
+        left: 75%;
+        color: white;
+        padding: 15px;
+      }
+
+      .text2 {
+        text-align: right;
+        left: 75%;
+        max-width: 30%;
+        height: 30%;
+        color: white;
+      }
+
+      .text3 {
+        position: absolute;
+        text-align: left;
+        max-width: 20%;
+        top: 23%;
+        left: 75%;
+        color: white;
+        padding: 15px;
+      }
+
+      .text4 {
+        position: absolute;
+        text-align: center;
+        top: 1100px;
+        width: 65%;
+        color: white;
+        padding: 15px;
+      }
+
+      .img1 {
+        position: absolute;
+        top: 26%;
+        left: 54%;
+        max-width: 40%;
+        max-height: 40%;
+        border: 5px white groove
+      }
+
+      .img2 {
+        position: absolute;
+        top: 98%;
+        left: 30%;
+        max-width: 40%;
+        max-height: 40%;
+        border: 5px white groove
+      }
+
+      .img3 {
+        position: absolute;
+        top: 98%;
+        left: 70%;
+        max-width: 70%;
+        max-height: 40%;
+        border: 5px white groove
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+
+      <ul class="sidenav">
+        <li><a href="https://tommyjasson.github.io/Home/" class="Body2"> Home</a></li>
+        <li><a href="https://tommyjasson.github.io/About-Me/" class="Body2"> About Me</a></li>
+        <li><a class="active Body2" href="#Interests"> Interests</a></li>
+        <li><a href="#Projects" class="Body2"> Projects</a></li>
+        <li><a href="#Contact" class="Body2"> Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="container">
+
+      </div>
+      <div id="home">
+
         <h1 class="text1 Header1"> My Interests </h1>
-                    
-          <img class="img1" src="IMG_2533.jpg" alt="About Me">
-          
-          <img class="img2" src="67959116734__2139E34D-B731-4C63-A6FD-F5DA64EA62F2.jpg" alt="About Me">
 
-          <img class="img3" src="IMG_6191.JPG" alt="About Me">
+        <img class="img1" src="IMG_2533.jpg" alt="About Me">
 
-          <p class="text2 Body1"> Now my whole life, i have had way too many interests to count. From reading to cooking to running. Finding new interests were a way for me to experience more and to find new inspirations.
-          </p>
-          
-          
-          <p class="text4 Body1"> Now i have had a few interests that have stuck with me to this day that i will always love for their own reasons. They make me who i am and they are where i fidn my inspiration for all my work. 
-          </p>
-          
-          <p class="text1 Body1"> Now cars have been and always will be my favorite interests since they are what got me into design. Cars have been part of ever since, from watching shows to studying them, to even taking photos and drawing sketches of dream cars. WHat got me into them was that there is no boundaries when designing or styling your car. You can make as you unique as you want so that it represents you.
-            </p>
-          
-          <p class="text5 Body1"> Another important interest to me is nature. Its been somewhere i can always count on to bring me back to earth, bring me peace. From just a walk in the woods to the smell of dewey grass. It's almost like i step out of my head and into this brand new world. Nature has always been a second home to me and a place where i can gather and organise ideas for projects or any type of work.
-          </p>
-          
-        </div>
-    </div>  
+        <img class="img2" src="67959116734__2139E34D-B731-4C63-A6FD-F5DA64EA62F2.jpg" alt="About Me">
+
+        <img class="img3" src="IMG_6191.JPG" alt="About Me">
+
+        <p class="text2 Body1"> Now my whole life, i have had way too many interests to count. From reading to cooking to running. Finding new interests were a way for me to experience more and to find new inspirations.
+        </p>
+
+
+        <p class="text3 Body1"> Now i have had a few interests that have stuck with me to this day that i will always love for their own reasons. They make me who i am and they are where i fidn my inspiration for all my work.
+        </p>
+
+        <p class="text1 Body1"> Now cars have been and always will be my favorite interests since they are what got me into design. Cars have been part of ever since, from watching shows to studying them, to even taking photos and drawing sketches of dream cars. WHat got me into them was that there is no boundaries when designing or styling your car. You can make as you unique as you want so that it represents you.
+        </p>
+
+        <p class="text4 Body1"> Another important interest to me is nature. Its been somewhere i can always count on to bring me back to earth, bring me peace. From just a walk in the woods to the smell of dewey grass. It's almost like i step out of my head and into this brand new world. Nature has always been a second home to me and a place where i can gather and organise ideas for projects or any type of work.
+        </p>
+
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
